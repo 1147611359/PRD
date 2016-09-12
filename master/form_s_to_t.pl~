@@ -1,0 +1,12 @@
+#!usr/bin/perl
+
+open (DATA,"$ARGV[0]");
+
+while (<DATA>){
+  my $in=$_;
+  $in=~s/\s\n/\n/g;
+
+  print "$in\n"; 
+
+}
+close DATA;
